@@ -37,4 +37,4 @@
 
 ```bash
 git clone https://github.com/fargolazadi/todo-app-fastapi.git
-cd <project-folder>
+cd todo-app-fastapi
