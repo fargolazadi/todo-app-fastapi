@@ -6,24 +6,25 @@
 ![License](https://img.shields.io/badge/License-MIT-yellow)
 
 
-TO-DO APP - FastAPI + PostgreSQL + Docker
-A backend application for managing tasks (To-Do) built with FastAPI, PostgreSQL, and Docker. This project includes JWT authentication, full CRUD operations for tasks, API documentation with Swagger & Redoc, and quick deployment using Docker Compose.
+📝 TO-DO APP
+FastAPI + PostgreSQL + Docker
+
+A backend application for managing tasks (To-Do) built with FastAPI, PostgreSQL, and Docker. Includes JWT authentication, full CRUD operations, API documentation with Swagger & Redoc, and quick deployment using Docker Compose.
 
 
+Features
+🔑 User registration and login with JWT authentication
 
- Features
-User registration and login with JWT authentication
+✅ Full CRUD operations for tasks
 
-Full CRUD operations for tasks
+📖 Interactive API documentation with Swagger and Redoc
 
-Interactive API documentation with Swagger and Redoc
+🐳 Quick setup and run with Docker & Docker Compose
 
-Quick setup and run with Docker & Docker Compose
-
-Seed data for testing
+🧪 Seed data for testing
 
 
- Technologies
+🛠️ Technologies
 Backend: FastAPI, SQLAlchemy, Pydantic
 
 Database: PostgreSQL
@@ -32,50 +33,49 @@ Authentication: JWT (OAuth2 Password Flow)
 
 Containerization: Docker, Docker Compose
 
-Installation & Run
-1. Clone the repository
+⚙️ Installation & Run
 
-bash
+1️⃣ Clone the repository
 
+```bash
 git clone https://github.com/fargolazadi/todo-app-fastapi.git
 cd todo-app-fastapi
 
-2. Environment variables
+2️⃣ Environment variables
+
 Create a .env file in the project root and add:
 
 env
-
 POSTGRES_USER=postgres
 POSTGRES_PASSWORD=postgres
 POSTGRES_DB=todo_db
 DATABASE_URL=postgresql+psycopg2://postgres:postgres@db:5432/todo_db
 
-3. Run with Docker Compose
+3️⃣ Run with Docker Compose
 
-bash
+‍‍‍‍‍‍```bash
 docker-compose up --build
 
-4. Access services
+4️⃣ Access services
 
-FastAPI: http://localhost:8000
+🌐 FastAPI: http://localhost:8000
 
-Swagger UI: http://localhost:8000/docs
+📑 Swagger UI: http://localhost:8000/docs
 
-Redoc: http://localhost:8000/redoc
+📘 Redoc: http://localhost:8000/redoc
 
-PostgreSQL: available on port 5432
-
+🗄️ PostgreSQL: available on port 5432
 
 ## Screenshots
 
 ### Swagger UI
-![Swagger](screenshots/swagger UI.png)
+![Swagger](screenshots/swagger.png)
 
 ### Redoc
-![Redoc](screenshots/redoc UI.png)
+![Redoc](screenshots/redoc.png)
 
 ### JSON
 ![Json](screenshots/json.png)
 
 ### Docker 
-![Docker](screenshots/docker compose.png)
+![Docker](screenshots/docker.png)
