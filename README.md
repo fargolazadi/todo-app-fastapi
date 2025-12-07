@@ -12,6 +12,9 @@ FastAPI + PostgreSQL + Docker
 A backend application for managing tasks (To-Do) built with FastAPI, PostgreSQL, and Docker. Includes JWT authentication, full CRUD operations, API documentation with Swagger & Redoc, and quick deployment using Docker Compose.
 
 
+
+
+
 Features
 🔑 User registration and login with JWT authentication
 
@@ -22,6 +25,9 @@ Features
 🐳 Quick setup and run with Docker & Docker Compose
 
 🧪 Seed data for testing
+
+
+
 
 
 🛠️ Technologies
@@ -53,7 +59,7 @@ DATABASE_URL=postgresql+psycopg2://postgres:postgres@db:5432/todo_db
 ```
 3️⃣ Run with Docker Compose
 
-‍‍‍‍‍‍```bash
+‍‍‍‍‍‍```
 docker-compose up --build
 ```
 
