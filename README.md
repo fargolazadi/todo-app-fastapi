@@ -1,5 +1,5 @@
-#📝 TO-DO APP
-###FastAPI + PostgreSQL + Docker
+# TO-DO APP
+### FastAPI + PostgreSQL + Docker
 
 ![Python](https://img.shields.io/badge/Python-3.11-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Framework-green)
@@ -39,13 +39,13 @@ ___
 
 ## Installation & Run
 
-###1️⃣ Clone the repository
+1️⃣ Clone the repository
 
 ```bash
 git clone https://github.com/fargolazadi/todo-app-fastapi.git
 cd todo-app-fastapi
 ```
-###2️⃣ Environment variables
+2️⃣ Environment variables
 
 Create a .env file in the project root and add:
 
@@ -55,20 +55,20 @@ POSTGRES_PASSWORD=postgres
 POSTGRES_DB=todo_db
 DATABASE_URL=postgresql+psycopg2://postgres:postgres@db:5432/todo_db
 ```
-###3️⃣ Run with Docker Compose
+3️⃣ Run with Docker Compose
 
 ‍‍‍‍‍‍```bash
 docker-compose up --build‍‍‍‍‍```
 
-###4️⃣ Access services
+4️⃣ Access services
 
-🌐 FastAPI: http://localhost:8000
+ FastAPI: http://localhost:8000
 
-📑 Swagger UI: http://localhost:8000/docs
+ Swagger UI: http://localhost:8000/docs
 
-📘 Redoc: http://localhost:8000/redoc
+ Redoc: http://localhost:8000/redoc
 
-🗄️ PostgreSQL: available on port 5432
+ PostgreSQL: available on port 5432
 
 ___
 
