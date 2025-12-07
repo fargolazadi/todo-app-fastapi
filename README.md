@@ -1,32 +1,81 @@
-#  TO-DO APP - FastAPI + PostgreSQL + Docker
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![FastAPI](https://img.shields.io/badge/FastAPI-Framework-green)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-blue)
+![Docker](https://img.shields.io/badge/Docker-Containerization-lightblue)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
-یک اپلیکیشن بک‌اند برای مدیریت کارها (To-Do) با استفاده از FastAPI، PostgreSQL و Docker. این پروژه شامل احراز هویت JWT، عملیات CRUD برای تسک‌ها، مستندات Swagger، و اجرای سریع با Docker Compose است.
 
----
+TO-DO APP - FastAPI + PostgreSQL + Docker
+A backend application for managing tasks (To-Do) built with FastAPI, PostgreSQL, and Docker. This project includes JWT authentication, full CRUD operations for tasks, API documentation with Swagger & Redoc, and quick deployment using Docker Compose.
 
-##  ویژگی‌ها
 
-- ثبت‌نام و ورود کاربران با JWT
-- عملیات کامل CRUD برای تسک‌ها
-- مستندات API با Swagger و Redoc
-- اجرای سریع با Docker و Docker Compose
-- داده‌ی اولیه (Seed) برای تست
 
----
+ Features
+User registration and login with JWT authentication
 
-##  تکنولوژی‌ها
+Full CRUD operations for tasks
 
-- **Backend:** FastAPI, SQLAlchemy, Pydantic
-- **Database:** PostgreSQL
-- **Auth:** JWT (OAuth2 Password Flow)
-- **Containerization:** Docker, Docker Compose
+Interactive API documentation with Swagger and Redoc
 
----
+Quick setup and run with Docker & Docker Compose
 
-##  نصب و اجرا
+Seed data for testing
 
-### 1. کلون کردن پروژه
 
-```bash
-git clone https://github.com/<username>/<repo-name>.git
-cd <project-folder>
+ Technologies
+Backend: FastAPI, SQLAlchemy, Pydantic
+
+Database: PostgreSQL
+
+Authentication: JWT (OAuth2 Password Flow)
+
+Containerization: Docker, Docker Compose
+
+Installation & Run
+1. Clone the repository
+
+bash
+
+git clone https://github.com/fargolazadi/todo-app-fastapi.git
+cd todo-app-fastapi
+
+2. Environment variables
+Create a .env file in the project root and add:
+
+env
+
+POSTGRES_USER=postgres
+POSTGRES_PASSWORD=postgres
+POSTGRES_DB=todo_db
+DATABASE_URL=postgresql+psycopg2://postgres:postgres@db:5432/todo_db
+
+3. Run with Docker Compose
+
+bash
+docker-compose up --build
+
+4. Access services
+
+FastAPI: http://localhost:8000
+
+Swagger UI: http://localhost:8000/docs
+
+Redoc: http://localhost:8000/redoc
+
+PostgreSQL: available on port 5432
+
+
+## Screenshots
+
+### Swagger UI
+![Swagger](screenshots/swagger UI.png)
+
+### Redoc
+![Redoc](screenshots/redoc UI.png)
+
+### JSON
+![Json](screenshots/json.png)
+
+### Docker 
+![Docker](screenshots/docker compose.png)
